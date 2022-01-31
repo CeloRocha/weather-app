@@ -1,0 +1,117 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+header, .logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: default;
+}
+
+header{
+  justify-content: space-between;
+  padding: 10px 10px 10px;
+  box-shadow: 0 0 4px 2px #000;
+  color: #FFF;
+  flex-wrap: wrap;
+}
+
+form{
+  display: flex;
+  margin-right: 20px;
+  flex-wrap: wrap;
+  background: transparent;
+  border-bottom: white 2px solid;
+}
+
+form > input {
+  background: transparent;
+  padding: 6px 12px;
+  width: 250px;
+  border: none;
+}
+
+form > input:focus{
+  outline: none;
+}
+form > button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding-right: 6px;
+}
+
+form > button > img{
+  height: 1.9rem;
+}
+
+.info-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFF;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
+  gap: 1rem;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.info > img{
+  height: 50px;
+}
+
+.forecast-section{
+  align-self: center;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2.4rem;
+}
+
+h1{
+  font-size: 3.6rem;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 2.4rem;
+}
+
+@media only screen and (max-width: 600px){
+  header{
+    flex-direction: column;
+  }
+}
+
+.loading{
+  margin: 50px auto;
+}
+
+footer{
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  border-top: 1px solid #FFF;
+  padding: 16px 0;
+}
+
+footer > a{
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 8px;
+}

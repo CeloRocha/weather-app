@@ -1,0 +1,8 @@
+.day{
+    border: 2px white solid;
+    border-radius: 1.6rem;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
