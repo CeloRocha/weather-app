@@ -11,7 +11,7 @@ export const useWeather = () => {
     const getWeather = async function (city) {
         const citySearch = processString(city)
         setStatus({ searching: true, searched: true})
-        const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${citySearch}&appid=de725c7adc8c0c968e808807a543f352&units=metric`)
+        const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${citySearch}&appid=de725c7adc8c0c968e808807a543f352&units=metric`)
         try {
             if(res.ok){
                 const data = await res.json()
@@ -29,7 +29,7 @@ export const useWeather = () => {
             console.log(error.message)
             return
         }
-        const forecastRes = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${citySearch}&appid=de725c7adc8c0c968e808807a543f352&units=metric`)
+        const forecastRes = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${citySearch}&appid=de725c7adc8c0c968e808807a543f352&units=metric`)
         const forecastAllData = await forecastRes?.json()
         const forecastData = forecastAllData.list
         const forecastArray = []
